@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Launch Your Dream Website</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap_theme/bootstrap.css" rel="stylesheet" type="text/css">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="bg-dark  navbar navbar-expand-lg navbar-dark py-lg-1"> 
+            <div class="container"> <a class="fw-bold navbar-brand text-uppercase" href="index.html"><img src="assets/synery-colour-logo.svg"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-6" aria-controls="navbarNavDropdown-6" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> 
+                </button>                 
+                <div class="collapse navbar-collapse " id="navbarNavDropdown-6"> 
+                    <ul class="mb-2 mb-lg-0 me-auto ms-auto navbar-nav"> 
+</ul>                     
+                    <div class="ms-lg-3"><a class="btn btn-outline-light pb-2 pe-4 ps-4 pt-2 rounded-5" href="mailto:michael@synergywebcreations.com" target="_blank">Get In Touch</a>
+                    </div>                     
+                </div>                 
+            </div>             
+        </nav>
+        <div class="container mb-5 mt-5">
+            <h1 class="mb-5 text-center">Unlock Your Tech Website&apos;s Potential: Get Your Free Assessment &amp; Quote</h1>
+            <p class="lead">Ready to build a website that reflects your innovative spirit and fuels your tech or AI business? Answer a few quick questions about your vision and goals, and we&apos;ll reward you with two valuable resources:</p>
+            <ol style="list-style: decimal inside;">
+                <li class="mb-3">Personalised Website Assessment: Gain expert insights into your website&apos;s strengths, potential improvements, and actionable recommendations tailored to your needs.</li>
+                <li>Free Website Quote & Timeline Estimation: Understand the investment and timeframe involved in bringing your dream website to life.</li>
+            </ol>
+            <p>By taking advantage of this free offer, you&apos;ll unlock valuable insights and a concise roadmap to achieving your website goals.</p>
+            <p class="fw-semibold">Ready to get started? Fill out the form below and unlock your website's true potential!</p>
+            <iframe id="JotFormIFrame-240422803635349" title="Launch Your Dream Website: Share Your Vision With Me Now" onload="window.parent.scrollTo(0,0)" allowtransparency="true" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/240422803635349" frameborder="0" style="min-width:100%;max-width:100%;height:539px;border:none;" scrolling="no">
+</iframe>
+            <script type="text/javascript">
+    var ifr = document.getElementById("JotFormIFrame-240422803635349");
+    if (ifr) {
+      var src = ifr.src;
+      var iframeParams = [];
+      if (window.location.href && window.location.href.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+      }
+      if (src && src.indexOf("?") > -1) {
+        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+        src = src.substr(0, src.indexOf("?"))
+      }
+      iframeParams.push("isIframeEmbed=1");
+      ifr.src = src + "?" + iframeParams.join('&');
+    }
+    window.handleIFrameMessage = function(e) {
+      if (typeof e.data === 'object') { return; }
+      var args = e.data.split(":");
+      if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+      if (!iframe) { return; }
+      switch (args[0]) {
+        case "scrollIntoView":
+          iframe.scrollIntoView();
+          break;
+        case "setHeight":
+          iframe.style.height = args[1] + "px";
+          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+            iframe.style.minHeight = args[1] + "px";
+          }
+          break;
+        case "collapseErrorPage":
+          if (iframe.clientHeight > window.innerHeight) {
+            iframe.style.height = window.innerHeight + "px";
+          }
+          break;
+        case "reloadPage":
+          window.location.reload();
+          break;
+        case "loadScript":
+          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+          var src = args[1];
+          if (args.length > 3) {
+              src = args[1] + ':' + args[2];
+          }
+          var script = document.createElement('script');
+          script.src = src;
+          script.type = 'text/javascript';
+          document.body.appendChild(script);
+          break;
+        case "exitFullscreen":
+          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+          break;
+      }
+      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+      }
+    };
+    window.isPermitted = function(originUrl, whitelisted_domains) {
+      var url = document.createElement('a');
+      url.href = originUrl;
+      var hostname = url.hostname;
+      var result = false;
+      if( typeof hostname !== 'undefined' ) {
+        whitelisted_domains.forEach(function(element) {
+            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                result = true;
+            }
+        });
+        return result;
+      }
+    };
+    if (window.addEventListener) {
+      window.addEventListener("message", handleIFrameMessage, false);
+    } else if (window.attachEvent) {
+      window.attachEvent("onmessage", handleIFrameMessage);
+    }
+    </script>
+        </div>
+        <footer class="bg-dark">
+            <div class="container pt-4">
+                <div class="align-items-center row">
+                    <div class="col-md text-start pb-2 pt-2">
+                        <p class="text-white mb-0">&copy; 2024. All Rights Reserved - Synergy Web Creations</p>
+                    </div>
+                    <div class="col-md-auto pb-2 pt-2"><a href="privacy.html" class="text-white">Privacy Policy</a> | <a href="terms.html" class="text-white">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
